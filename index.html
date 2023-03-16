@@ -314,7 +314,7 @@
                사용자의 웹캠을 통해 동작을 실시간으로 인식하며 선택할 수 있는 동작은 Side_lunge, Squat, Tree로 3가지가 있습니다.<br>
                MySQL로 사용자 DB를 구성했으며, 사용자가 로그인을 한다면 정확도 95% 이상의 동작들은 서버에 저장되며
                마이페이지에서 가장 최근에 찍힌 정확도 높은 사진을 볼 수 있습니다.<br>
-               웹 서비스는 Flask를 활용하였습니다.
+               웹 서비스는 Flask로 구현하였습니다.
              </p>
             </div>
           </div>
@@ -332,68 +332,66 @@
               <hr>
                 <p>프로젝트 기간 : 2022.11.14. ~ 2022.12.13(1달)</p>
               <hr>
-                <p>프로젝트 방식 : Model 2</p>
-                <p>사용 프로그램 : Eclipse, Mariadb, Github</p>
-                <p>사용 스택 : Html, Java, SQL, JavaScript(jquery), JDBC, JSTL, bootstrap</p>
+                <p>사용 스택 : Python, SQL, Flask, Html, FastAPI</p>
+                <p>사용 모델 : MetricLearning, YOLOv5</p>
+                <p>담당 역할 : 데이터 전처리, AI 모델링, 모델 학습</p>
               <hr>
               <p>
                 [프로젝트 설명]<br>
-                mySql의 샘플 데이터베이스 Sakila 데이터베이스와 Model2 기법으로 제작한 비디오 대여점 프로젝트입니다.<br>
-                비디오 대여점을 관리하는 프로그램으로써 주 기능으로는 비디오 대여, 반납, 관리와 회원, 출연 배우 관리등이 존재하며<br>
-                Model1과는 다르게 모델,컨트롤러,뷰 를 나누어서 작업이 진행되었으며 처음으로 필터와 리스너 기능을 사용한 프로젝트이기도 합니다.
+                광주인공지능 실전역량 프로젝트에서 기업주제로 기업과 협업한 반문분석기반 젖소 개체인식 앱서비스 프로젝트입니다.<br>
+                축산업에서 목장의 생산성 개선을 위해 젖소의 24시간 추적 및 관리를 관리태그 대신 어플로 간편하게 사용하여 고유 개체인식 및 관리가 가능합니다.<br>
+                작동방식은 앱으로 소를 사진을 찍어올리면 소인지 아닌지 YOLOv5로 판별하고 소가 맞다면 기존에 등록된 소면 개체의 ID를 알려줍니다.
             </div>
            </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-Project">
             <div class="portfolio-links">
-             <a href="http://baebae98.kro.kr/mall/" target="_blank"><img src="assets/img/portfolio-4.PNG" class="img-fluid" alt=""></a>
+             <a href="https://github.com/Esocle/Face_recognition" target="_blank"><img src="assets/img/project3.png" class="img-fluid" alt=""></a>
              <p>
-              <h4>
+              <!-- <h4>
                 <a class="portfolio-links" href="https://github.com/baebae98/mall" target="_blank">
                   [Github Link]
                 </a>
-              </h4>
+              </h4> -->
             </p>  
              <h4>얼굴판별 프로그램</h4>						
              <hr>
                <p>프로젝트 기간 : 2023.03.02(1일)</p>
              <hr>
-               <p>프로젝트 방식 : Model 1</p>
-               <p>사용 프로그램 : Eclipse, Mariadb, Github</p>
-               <p>사용 언어 : Html, Java, SQL, JavaScript(jquery), JDBC, JSTL, bootstrap</p>
+              <p>사용 스택 : Python, dlib, Face_recognition</p>
              <hr>
              <p>
                [프로젝트 설명]<br>
-               Model1 방식으로 만든 쇼핑몰 프로젝트 입니다.<br>
-               일반 쇼핑몰 페이지처럼 로그인, 회원가입, 마이페이지, 장바구니, 개인정보 수정, 회원탈퇴등의 사용자 기능이 존재하며
-               사용자는 물건을 구매, 취소할 수 있는 전형적인 쇼핑몰 페이지 입니다.
+               개인 프로젝트입니다.<br>
+               사람의 사진을 넣었을 때 이사람이 어떤 사람인지 판별해주는 프로그램을 만들고자 하였습니다.<br>
+               한사람만 찍힌 사진을 사람의 이름으로 knowns 폴더에 저장하면 판별하고자하는 사진을 넣었을 때 유클리드거리를 구하여 최소거리값의 이름을 리턴합니다.<br>
+               저장된 사진과 같은 사람이 없다고 판단되면(유사도가 0.6 미만이면) 'unknown'이라는 이름으로 리턴됩니다.
              </p>
             </div>
           </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-Project">
               <div class="portfolio-links">
-               <a href="http://baebae98.kro.kr/mall-admin/" target="_blank"><img src="assets/img/portfolio-5.png" class="img-fluid" alt=""></a>
+               <a href="https://github.com/Esocle/flask_tf_color" target="_blank"><img src="assets/img/project4.png" class="img-fluid" alt=""></a>
                <p>
-                <h4>
+                <!-- <h4>
                   <a class="portfolio-links" href="https://github.com/baebae98/mall-admin" target="_blank">
                     [Github Link]
                   </a>
-                </h4>
+                </h4> -->
               </p>  
                <h4>Flask를 활용한 사진 필터 프로그램</h4>					
                <hr>
-                 <p>프로젝트 기간 : 2020.09(1주)</p>
+                 <p>프로젝트 기간 : 2022.07.11-15(5일)</p>
                <hr>
-                 <p>프로젝트 방식 : Model 1</p>
-                 <p>프로젝트 도구 : Eclipse, Mariadb, Github</p>
-                 <p>사용 언어 : Html, Java, SQL, JavaScript(jquery), JDBC, JSTL, bootstrap</p>
+                <p>사용 스택 : Python, Flask</p>
+                <p>사용 모델 : Keras sequential model</p>
                <hr>
                <p>
                  [프로젝트 설명]<br>
-                 Model1 방식으로 제작한 첫 프로젝트인 쇼핑몰 관리 페이지 입니다.<br>
-                 이후 제작한 쇼핑몰 페이지를 관리하는 관리자 페이지로써, 
-                 회원 관리, 카테고리 관리, 상품 관리, 주문내역 관리, 공지사항 관리등의 작업을 할 수 있습니다.
+                 AI 모델링 첫 프로젝트 사진 필터 프로그램입니다.<br>
+                 Kakao talk에서 프로필을 올릴 때 필터링의 효과를 구현해보고자 하였습니다.<br>
+                 웹 서비스는 Flask로 구현하였습니다.
                </p>
               </div>
             </div>
